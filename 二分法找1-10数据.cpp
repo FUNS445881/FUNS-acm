@@ -3,14 +3,14 @@
 int main()
 {
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
-	int sk,right,mid=0,k = 0;
+	int sk, right, mid = 0, k = 0;
 	int left = 0;
 	scanf("%d", &k);
 	sk = sizeof(arr) / sizeof(arr[0]);
 	right = sk - 1;
 	while (left <= right)
 	{
-	     mid = (left + right) / 2;
+		mid = (left + right) / 2;
 		if (arr[mid] < k)
 		{
 			left = mid + 1;
@@ -19,15 +19,15 @@ int main()
 		{
 			right = mid - 1;
 		}
-		else 
+		else
 		{
-			printf("ÕÒµ½ÁË£¬ÏÂ±êÊÇ:%d\n", mid);
+			printf("å·²æ‰¾åˆ°ï¼Œä¸‹æ ‡ä¸º:%d\n", mid);
 			break;
 		}
 	}
 	if (left > right)
 	{
-		printf("ÕÒ²»µ½");
+		printf("æ‰¾ä¸åˆ°æ‰€é€‰æ•°å­—");
 	}
 	return 0;
 }
