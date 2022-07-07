@@ -4,10 +4,10 @@
 int main()
 {
 	int a = 0, b = 0, i = 0,count=0;
-	printf("ÇëÊäÈëÆğÊ¼Äê·İ:");
+	printf("è¯·è¾“å…¥èµ·å§‹å¹´ä»½:");
 	scanf("%d", &a);
 	system("cls");
-	printf("ÇëÊäÈë½áÊøÄê·İ:");
+	printf("è¯·è¾“å…¥ç»“æŸå¹´ä»½:");
 	scanf("%d", &b);
 	system("cls");
 	for (i = a; i <= b; i++)
@@ -21,6 +21,12 @@ int main()
 			count++;
 		}
 	}
-		printf("\nÊıÁ¿Îª%d\n", count);
+		printf("\næ•°é‡ä¸º%d\n", count);
+	/*	æ–¹æ³•2(forå†…å¾ªç¯)
+		if (((i % 4 = 0) && (i % 100 != 0)) || (i % 400 == 0));
+		printf("%d ",i);
+		count++;
+		for å¤–
+		printf("\næ•°é‡ä¸º%d\n", count)*/
 	return 0;
 }
