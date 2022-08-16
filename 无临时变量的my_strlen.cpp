@@ -12,7 +12,7 @@ int my_strlen(char* str)
 int main()
 {
 	char arr[] = "Funs445881";
-	int len = my_strlen(arr);
+	int len = my_strlen(arr);//arr是数组，数组传参，传过去的不是整个数组，而是数组第一个元素的地址，这也是为什么是char*str，str+1即为下一个元素的地址。
 	printf("len = %d\n", len);
 	return 0;
 }
