@@ -5,11 +5,11 @@ int main()
 	int arr[] = { 4,4,5,8,8,1,1};
 	int i = 0;
 	int sz = sizeof(arr) / sizeof(arr[0]);
-	//·½·¨1-±©Á¦Çó½â
+	//æ–¹æ³•1-æš´åŠ›æ±‚è§£
 	for (i = 0; i < sz; i++)
 	{
-		int count = 0;//¼ÆÊýÆ÷£¬ÓÃÀ´¼ÆÊý³öÏÖÁË¼¸´Î
-		int j = 0;//important£ºjÃ¿Ò»´Î¶¼Òª³õÊ¼»¯Îª0²Å¿ÉÒÔ
+		int count = 0;//è®¡æ•°å™¨ï¼Œç”¨æ¥è®¡æ•°å‡ºçŽ°äº†å‡ æ¬¡
+		int j = 0;//importantï¼šjæ¯ä¸€æ¬¡éƒ½è¦åˆå§‹åŒ–ä¸º0æ‰å¯ä»¥
 		for (j = 0; j < sz; j++)
 		{
 			if (arr[i] == arr[j])
@@ -19,9 +19,19 @@ int main()
 		}
 		if (count == 1)
 		{
-		printf("Ö»³öÏÖÒ»´ÎµÄÊýÎª£º%d", arr[i]);
+		printf("åªå‡ºçŽ°ä¸€æ¬¡çš„æ•°ä¸ºï¼š%d", arr[i]);
 			break;
 		}
 	}
+		//æ–¹æ³•2
+	// a^a=0
+	// a^0=a
+	// a^b^a=a^a^b
+	//int ret = 0;
+	/*for (i = 0; i < sz; i++)
+	{
+		ret = ret^ arr[i];
+	}*/
+    //printf("åªå‡ºçŽ°ä¸€æ¬¡çš„æ•°ä¸ºï¼š%d", ret);
 	return 0;
 }
